@@ -14,9 +14,9 @@ A pre-boot execution environment for Apple boards built on top of checkra1n.
   - On Debian/Ubuntu these can be installed from the checkra1n repo:
     ```
     echo 'deb https://assets.checkra.in/debian /' | sudo tee /etc/apt/sources.list.d/checkra1n.list
-    sudo apt-key adv --fetch-keys https://assets.checkra.in/debian/archive.key
+    sudo apt-key adv --fetch-keys http://assets.checkra.in/debian/archive.key
     sudo apt-get update
-    sudo apt-get install -y ld64 cctools-strip
+    sudo apt-get install -y libc6 ld64 cctools-strip
     ```
   - On other Linux flavours you'll likely have to build them yourself. Maybe [this repo](https://github.com/Siguza/ld64) will help you.
 - Run `make all`
